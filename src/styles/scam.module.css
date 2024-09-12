@@ -1,0 +1,113 @@
+/* Layout dasar untuk desktop dan layar besar */
+.scamBody {
+    background-color: #fef2f2;
+    color: #1a1a1a;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: #ff0000;
+    text-shadow: 2px 2px 8px #ff4d4d;
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: #ff9900;
+  }
+  
+  form {
+    background-color: #ffffff;
+    border: 3px dashed #ff0000;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 50%; /* Ukuran default form pada layar besar */
+  }
+  
+  label {
+    display: block;
+    margin: 15px 0;
+    font-size: 1.2em;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff9900;
+    margin-top: 5px;
+  }
+  
+  button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Ukuran layar tablet */
+  @media only screen and (max-width: 1024px) {
+    h1 {
+      font-size: 2.5em; /* Sedikit lebih kecil di tablet */
+    }
+  
+    h2 {
+      font-size: 1.8em;
+    }
+  
+    form {
+      width: 70%; /* Lebih lebar pada layar tablet */
+    }
+  
+    button {
+      padding: 12px 25px; /* Sedikit lebih kecil di tablet */
+    }
+  }
+  
+  /* Ukuran layar ponsel */
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 2em; /* Lebih kecil di ponsel */
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    form {
+      width: 90%; /* Lebar penuh di layar ponsel */
+      padding: 15px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+    }
+  }
+  
+  /* Ukuran layar sangat kecil (ponsel kecil) */
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.8em; /* Ukuran teks lebih kecil di layar kecil */
+    }
+  
+    h2 {
+      font-size: 1.3em;
+    }
+  
+    form {
+      width: 95%; /* Hampir memenuhi layar */
+    }
+  
+    button {
+      padding: 8px 15px;
+      font-size: 1em;
+    }
+  }
+  
